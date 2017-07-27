@@ -1,0 +1,11 @@
+
+<h1>"Bienvenue sur ma super app de listing de films !!"</h1>
+<p>Ci dessous les films les meilleurs du monde</p>
+<table>
+
+  <% @movies.each do |movie| %>
+  <tr>
+    <td><%= movie[:title] %> released in <%= movie[:release_year] %> </td>
+  </tr>
+  <% end %>
+</table>
